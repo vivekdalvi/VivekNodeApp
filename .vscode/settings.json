@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/42c94905-cddf-4915-94bb-57495529b64c/resourceGroups/VivekTestNode-RG/providers/Microsoft.Web/sites/VivekNodeApp",
+    "appService.deploySubpath": "."
+}
