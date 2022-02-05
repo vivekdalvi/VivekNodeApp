@@ -6,11 +6,12 @@ router.get('/', function (req, res, next) {
   console.log("This responds to home page");
   res.render('index', { title: 'CodingBuddy' });
 });
-/* Get About Me page */
+/* Get About Me page 
 router.get('/aboutme', function (req, res, next) {
   console.log("This responds to aboutme page");
   res.render('aboutme', { title: 'CodingBuddy' });
 });
+*/
 
 router.get('/test', function (req, res, next) {
   console.log("This responds to test page");
