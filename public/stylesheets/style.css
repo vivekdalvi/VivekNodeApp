@@ -1,8 +1,35 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/HD-Sunrise-Image.jpg');
+}
+
+h1{
+  font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+
+p.question{
+  font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+p.answer {
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+div{
+  background-color: blue;
+}
+
+div.button{
+  background-color: red;
+}
+
+div.text{
+  background-color: chartreuse;
+}
+

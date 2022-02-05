@@ -1,6 +1,20 @@
 extends layout
 
 block content
+   
   h1= title
-  p Come to #{title}
-  p Tanvi is awesome
+  p.question What is #{title} ?
+  p.answer Coding buddy connects you to a professional programmer who is interested in helping you learn programming
+
+  p.question Do I need to pay for #{title} ?
+  p.answer Nope, we believe programmers are awesome and world need more of them! 
+
+  p.question Is this another computer science class #{title} ?
+  p.answer Nope, we believe programmers are awesome and world needs more of them! 
+
+
+  div.button 
+      input(type="button", value="test")
+  div.text
+    input(type="text", value="test")
+
