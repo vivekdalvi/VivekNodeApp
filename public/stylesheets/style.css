@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url('../images/background.JPG');
+ 
   background-size: cover;
 }
 
@@ -22,9 +22,7 @@ p.answer {
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-div{
-  background-color: blue;
-}
+
 
 div.button{
   background-color: red;
@@ -32,5 +30,14 @@ div.button{
 
 div.text{
   background-color: chartreuse;
+}
+
+div.footer{
+  background-color: rgb(0, 126, 243);
+  position: absolute;
+  bottom: 0;
+  width: 644px;
+  height: 20px;
+  margin: 0 auto;
 }
 
