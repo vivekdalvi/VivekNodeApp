@@ -8,7 +8,8 @@ router.get('/', function (req, res, next) {
 
 router.get('/feedback', function (req, res, next) {
     console.log("This responds to feedback logic");
-    res.render('aboutme', { title: 'CodingBuddy' });
+    //res.render('aboutme', { title: 'CodingBuddy' });
+    res.send('feedback received')
 });
 
 module.exports = router;
