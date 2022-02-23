@@ -1,5 +1,5 @@
 var express = require('express');
-const MyClass = require('../Utils/MyClass');
+const Feedback = require('../Utils/Feedback');
 
 
 var router = express.Router();
@@ -23,9 +23,9 @@ router.post('/feedback', function (req, res, next) {
     console.log(req.body.comment);
     //res.render('aboutme', { title: 'CodingBuddy' });
     var feedbackreceived = "Feedback received from " + req.body.name;
-    const myclass = new MyClass(req.body.name, req.body.email, req.body.comment);
+    const feedback = new Feedback(req.body.name, req.body.email, req.body.comment);
     // var feedback = new Feedback(req.body.name, req.body.email, req.body.comment);
-    res.send("Thank you for your feedback " + myclass.getUserName());
+    res.send("Thank you for your feedback " + feedback.getUserName());
 });
 
 

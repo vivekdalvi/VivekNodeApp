@@ -1,4 +1,4 @@
-class MyClass {
+class Feedback {
 
     constructor(username, email, comment) {
         this.username = username;
@@ -19,4 +19,4 @@ class MyClass {
     }
 };
 
-module.exports = MyClass;
+module.exports = Feedback;
