@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 
-class DataStorage {
+class FileStorage {
 
     constructor(filepath) {
         this.FilePath = filepath;
@@ -26,4 +26,4 @@ class DataStorage {
     }
 }
 
-module.exports = DataStorage;
+module.exports = FileStorage;

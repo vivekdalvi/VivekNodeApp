@@ -1,6 +1,7 @@
 var express = require('express');
 const Feedback = require('../Utils/Feedback');
-const DataStorage = require('../Utils/DataStorage');
+//const FeedbackTs = require('../Utils/FeedbackTs');
+
 
 var router = express.Router();
 router.use(express.urlencoded({ extended: true }));
@@ -22,9 +23,9 @@ router.post('/feedback', function (req, res, next) {
     //console.log(req.body.comment);
     var feedbackreceived = "Feedback received from " + req.body.name;
     const feedback = new Feedback(req.body.name, req.body.email, req.body.comment);
-    const datastorage = new DataStorage('./Utils/feedback.txt');
-    const entry = datastorage.WriteFile(feedback.getUserName() + "," + feedback.getEmail() + "," + feedback.getComment());
-    const data = datastorage.ReadFile().then(console.log);
+    feedback.writeFeedback();
+    //const feedbackts = new FeedbackTs(req.body.name, req.body.email, req.body.comment);
+
     res.send("Thank you for your feedback " + feedback.getUserName());
 });
 

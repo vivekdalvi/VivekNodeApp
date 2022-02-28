@@ -1,3 +1,4 @@
+const FileStorage = require('../Utils/FileStorage');
 class Feedback {
 
     constructor(username, email, comment) {
@@ -17,6 +18,13 @@ class Feedback {
     getEmail() {
         return this.email;
     }
+
+    writeFeedback() {
+        const filestorage = new FileStorage('./Utils/feedback.txt');
+        const entry = filestorage.WriteFile(this.getUserName() + "," + this.getEmail() + "," + this.getComment());
+        const data = filestorage.ReadFile().then(console.log);
+    }
+
 };
 
 module.exports = Feedback;
